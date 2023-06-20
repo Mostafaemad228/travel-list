@@ -1,7 +1,11 @@
-function PackingList() {
+import Items from './../ItemsComponant/Items';
+
+function PackingList({ initialItems }) {
     return (
-        <div>
-            <h1> Hello </h1>
+        <div className="list">
+            <ul>
+                <Items initialItems={initialItems} />
+            </ul>
         </div>
     )
 }
